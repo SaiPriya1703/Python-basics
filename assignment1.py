@@ -10,12 +10,8 @@ Original file is located at
 def sum_of_evens(n):
     if n < 1:
         return "Please enter a positive integer."
-
-    # Sum all even numbers between 1 and n
     total = sum(number for number in range(1, n + 1) if number % 2 == 0)
     return total
-
-# Input from the user
 try:
     n = int(input("Enter a positive integer: "))
     result = sum_of_evens(n)
